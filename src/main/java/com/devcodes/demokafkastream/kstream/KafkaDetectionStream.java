@@ -69,7 +69,7 @@ public class KafkaDetectionStream {
     public Detection radarAlertToDetection(AlertDTO alertDTO){
         Detection detection = new Detection();
         detection.setSensorId(String.valueOf(alertDTO.getSensorId()));
-        detection.setSourceNode(alertDTO.getNodeId());
+        detection.setSourceName(alertDTO.getSensorName());
         detection.setLatitude(alertDTO.getLatitude());
         detection.setLongitude(alertDTO.getLongitude());
         detection.setDateTime(alertDTO.getDate());
@@ -81,8 +81,7 @@ public class KafkaDetectionStream {
         additionalInfo.put("range", alertDTO.getRange());
         additionalInfo.put("size", alertDTO.getSize());
         additionalInfo.put("speed", alertDTO.getSpeed());
-        additionalInfo.put("nodeName", alertDTO.getNodeName());
-        additionalInfo.put("quadrant", alertDTO.getQuadrant());
+        additionalInfo.put("sensorName", alertDTO.getSensorName());
         additionalInfo.put("sensorType", alertDTO.getSensorType());
         detection.setAdditionalInfo(additionalInfo);
         return detection;

@@ -16,17 +16,15 @@ public class AlertDTO {
     private int id;
     private Integer idTrace;
     private String type;
-    private int sensorId;
+    private String sensorId;
     private LocalDateTime date;
     private Double bearing;
     private Double range;
     private Integer size;
     private Integer speed;
     private Integer heading;
-    private String nodeId;
-    private String nodeName;
+    private String sensorName;
     private String sensorType;
     private Double latitude;
     private Double longitude;
-    private Character quadrant;
 }

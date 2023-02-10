@@ -13,7 +13,7 @@ import java.util.Map;
  **/
 @Data
 public class Detection {
-    private String sourceNode;
+    private String sourceName;
     private String sensorId;
     private double latitude;
     private double longitude;
