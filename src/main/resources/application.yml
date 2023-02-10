@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: demo-kafka-stream
+kafka-props:
+  bootstrap-servers: localhost:9092
+  inbound-topic: server-topic-in
+  outbound-topic: server-topic-out
+
